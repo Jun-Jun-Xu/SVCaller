@@ -8,11 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Utilities of TIGER apps
- * @author
+ * Utilities of SVCaller apps
+ * @JunXu
  */
 public class AppUtils {
-
     public static Dyad<List<String>, List<String>> getParameterList (String parameterFileS) {
         List<String> pLineList = new ArrayList<>();
         List<String> sLineList = new ArrayList<>();

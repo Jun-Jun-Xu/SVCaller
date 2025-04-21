@@ -9,7 +9,7 @@ package utils;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.concurrent.CountDownLatch;
+import java.util.Arrays;
 
 public class MonitorUtils {
     /**
@@ -103,5 +103,23 @@ public class MonitorUtils {
             ex.getStackTrace();
         }
         return isFinish;
+    }
+
+    /**
+     * @author xujun on 2022-06-23-6:07 PM
+     * @project SVCaller
+     */
+    public static class Methods {
+        public static int binarySearch(int value, int[] a) {
+            if (value <= a[0]) { return a[0]; }
+            if (value >= a[a.length - 1]) { return a[a.length - 1]; }
+
+            int result = Arrays.binarySearch(a, value);
+            if (result >= 0) { return a[result]; }
+
+            int insertionPoint = -result - 2;
+            return (a[insertionPoint] - value) < (value - a[insertionPoint - 1]) ?
+                    a[insertionPoint] : a[insertionPoint - 1];
+        }
     }
 }

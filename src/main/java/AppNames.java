@@ -7,36 +7,97 @@
 /**
  * Available apps in SiPAS-tools
  */
-public enum AppNames implements Comparable <AppNames> {
-    /**
-     * Parsing samples according barcodes.
-     */
-    Parsing ("Parsing"),
+public enum AppNames implements Comparable<AppNames> {
 
     /**
-     * Quality control.
+     * Call deletion.
      */
-    QC ("QC"),
+    Deletion("Deletion"),
 
     /**
-     * Alignment of fq file
+     * Call duplication.
      */
-    Alignment ("Alignment"),
+    Duplication("Duplication"),
 
     /**
-     * The validation of samples with DNA and RNA-seq data.
+     * Call Insertion.
      */
-    SampleValidation ("SampleValidation"),
+    Insertion("Insertion"),
 
     /**
-     * Quantification of gene expression.
+     * Call Insertion.
      */
-    Counting ("Counting"),
+    InsertionNew("InsertionNew"),
 
     /**
-     * Merging the gene expresion of each sample to a countTable.
+     * Call Insertion.
      */
-    Merging ("Merging");
+    InsertionOld("InsertionOld"),
+
+    /**
+     * Make library of Insertion.
+     */
+    MakeLib("MakeLib"),
+
+    /**
+     * Make library of Insertion.
+     */
+    MakeInsLib("MakeInsLib"),
+
+    /**
+     * Find Insertion from result of svim.
+     */
+    FindFromSivm("FindFromSivm"),
+
+    /**
+     * Find Insertion from result of svim.
+     */
+    ChangeBamFlag("ChangeBamFlag"),
+
+    /**
+     * Find insertion in unmapped reads(Both end).
+     */
+    MateInsertion("MateInsertion"),
+
+    /**
+     * Find insertion in unmapped reads(Both end).
+     */
+    UnmapInsertion("UnmapInsertion"),
+
+    /**
+     * Call inversion.
+     */
+    Inversion("Inversion"),
+
+    /**
+     * Genotype deletion.
+     */
+    GenotypeDel("GenotypeDel"),
+
+    /**
+     * Genotype deletion.
+     */
+    GenotypeDelNew("GenotypeDelNew"),
+
+    /**
+     * Genotype deletion.
+     */
+    GenotypeDelNew1("GenotypeDelNew1"),
+
+    /**
+     * Find breaking point from splite reads and unreasonble PE reads.
+     */
+    SpliteAndPE("SpliteAndPE"),
+
+    /**
+     * Reliable site.
+     */
+    ReliableSit("ReliableSit"),
+
+    /**
+     * Output unreasonble PE reads.
+     */
+    FindURPE("FindURPE");
 
     public final String name;
 
@@ -44,7 +105,7 @@ public enum AppNames implements Comparable <AppNames> {
         this.name = name;
     }
 
-    public String getName () {
+    public String getName() {
         return name;
     }
 }

@@ -1,0 +1,27 @@
+#App:	genotypeDel
+#Author:	Jun Xu
+#Email:
+#Homepage:	https://plantgeneticslab.github.io/home/
+
+#Command line example is as follows,
+#java -Xmx100g -jar SVCall.jar -a genotyeDel -p parameter_genotypeDel.txt > log.txt &
+#To specify options, please edit the the parameters below. Also, please keep the order of parameters.
+
+#Parameter 1: The taxaRefBamMap file containing information of taxon and its corresponding bam files. The bam file should have .bai file in the same folder
+#If one taxon has n bam files, please list them in n rows.
+/Users/xujun/Desktop/Tempory/taxaBam.txt
+
+#Parameter 2: The chromosome which will be scanned.
+Chr1
+
+#Parameter 3: The path of deletion library.
+/Users/xujun/Desktop/Tempory/HZ_merge_sort_200K.bed
+
+#Parameter 4: The path of samtools
+/Users/xujun/miniconda/bin/samtools
+
+#Parameter 5: Number of threads
+16
+
+#Parameter 6: The output file in gz format
+/Users/xujun/Desktop/Tempory/chr001_genotypeDel.txt.gz
