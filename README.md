@@ -10,7 +10,7 @@ SiPAS-tools is designed to simpliy its usage for the convenience of end users. I
 
 [Parsing](https://github.com/PlantGeneticsLab/SiPAS-tools/wiki/Parsing)
 ```sh
-Parsing samples arrcoding to barcodes.
+Duplication samples arrcoding to barcodes.
 ```
 [QC](https://github.com/PlantGeneticsLab/SiPAS-tools/wiki/QC)
 ```sh

@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SVCaller" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Entrance" />
+    <module name="SVCaller" />
+    <option name="PROGRAM_PARAMETERS" value="-a GenotypeDelNew1 -i $USER_HOME$/Desktop/Tempory/test.bam -f $USER_HOME$/Desktop/Tempory/DEL_lib.txt.gz -o $USER_HOME$/Desktop/Tempory/test.txt.gz -chr 42 -p $USER_HOME$/miniconda/bin/samtools -s 2  " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
